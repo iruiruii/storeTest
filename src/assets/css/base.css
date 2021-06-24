@@ -1,0 +1,50 @@
+@import './normalize.css';
+
+:root {
+    --color-text: #666;
+    --color-high-text: #ff5777;
+    --color-background: #fff;
+    --color-tint: #ff8198;
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Heivetica Neue" ,Helvetica, sans-serif, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑";
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    background: var(--color-background);
+    color: var(--color-text);
+    width: 100vw;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear-fix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.clear-fix {
+    zoom: 1;
+}
